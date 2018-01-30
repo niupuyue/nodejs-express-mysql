@@ -1,0 +1,18 @@
+<h2 class="page-header">推荐职位</h2>
+<div class="list-group">
+  <a class="list-group-item movies-item" *ngFor="let item of jobs">
+    <div class="media">
+      <div class="media-left">
+        <img class="media-object" width="100" height="100" [src]="item.c_images">
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading">{{item.j_name}}</h3>
+        <h4>{{item.c_name}}</h4>
+        <p>薪水:{{item.j_money}}</p>
+        <p>工作地点:{{item.c_address}}</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+

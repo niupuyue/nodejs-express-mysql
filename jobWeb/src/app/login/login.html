@@ -1,0 +1,12 @@
+<div class="container">
+  <span *ngIf="isShow" class="alert alert-success show-alert">登陆成功</span>
+  <form class="form-signin">
+    <h2 class="form-signin-heading">登录</h2>
+    <label>姓名</label>
+    <input [(ngModel)]="user.username" name="username" type="text"  class="form-control" placeholder="请输入姓名" required autofocus>
+    <label>密码</label>
+    <input [(ngModel)]="user.password" name="password" type="password"  class="form-control" placeholder="请输入密码" required>
+    <button id="login" (click)="login()" class="btn btn-lg btn-primary btn-block">登录</button>
+  </form>
+
+</div>

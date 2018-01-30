@@ -1,0 +1,25 @@
+<div class="container">
+  <span *ngIf="isShow" class="alert alert-success show-alert">注册成功</span>
+  <form class="form-signin">
+    <h2 class="form-signin-heading">注册</h2>
+    <label>姓名</label>
+    <input [(ngModel)]="user.username" name="username" type="text"  class="form-control" placeholder="请输入姓名" required autofocus>
+    <label>密码</label>
+    <input [(ngModel)]="user.password" name="password" type="password"  class="form-control" placeholder="请输入密码" required>
+    <label>年龄</label>
+    <input [(ngModel)]="user.age" name="age" type="number"  class="form-control" placeholder="请输入年龄" required>
+    <label>性别</label>
+    <input [(ngModel)]="user.gender" name="gender" type="text"  class="form-control" placeholder="请输入性别" required>
+    <label>求知意向</label>
+    <input [(ngModel)]="user.intent" name="intent" type="text"  class="form-control" placeholder="请输入求知意向" required>
+    <label>学校</label>
+    <input [(ngModel)]="user.school" name="school" type="text"  class="form-control" placeholder="请输入学校" required>
+    <label>地址</label>
+    <input [(ngModel)]="user.address" name="address" type="text"  class="form-control" placeholder="请输入地址" required>
+    <label>手机</label>
+    <input [(ngModel)]="user.phone" name="phone" type="text"  class="form-control" placeholder="请输入手机" required>
+    <label>期望薪水</label>
+    <input [(ngModel)]="user.money" name="money" type="number"  class="form-control" placeholder="请输入期望薪水" required>
+    <button id="login" (click)="regist()" class="btn btn-lg btn-primary btn-block">注册</button>
+  </form>
+</div>

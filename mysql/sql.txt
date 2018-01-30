@@ -1,0 +1,148 @@
+创建数据库
+create database jobs character set utf8;
+
+创建表
+users表：
+create table users (
+	user_id int(4) PRIMARY key auto_increment,
+	user_name varchar(30) not null,
+	user_password varchar(50) not null,
+	user_age int (3) not null,
+	user_gender varchar(5) not null,
+	user_intent varchar(50) not null,
+	user_school varchar(30),
+	user_address varchar(50),
+	user_phone varchar(20) not null,
+	user_money double(10,2),
+	user_images varchar(50)
+);
+
+填充数据：
+insert into users values (null,'蓝精灵','123456',28,'男','web工程师','广东工业大学','广州市天河区大学城外环西路10号','13533578766',8000.00,null);
+insert into users values (null,'陈雪雨','123456',31,'男','全栈工程师','北京电影学院','北京市朝阳区','13533578766',11000.00,null);
+insert into users values (null,'郑继','123456',26,'男','js高级工程师','中国科技大学','安微省合肥市','13533578766',10000.00,null);
+insert into users values (null,'曾镇清','123456',21,'男','nodejs后台工程师','汕头大学','广东省汕头市潮阳区','13533578766',8000.00,null);
+insert into users values (null,'郑创杰','123456',21,'男','web工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'马丹敏','123456',21,'女','UI设计师','北京大学','北京市玄武区','13533578766',9000.00,null);
+insert into users values (null,'李川霖','123456',21,'女','全栈工程师','西安财经大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'肖嘉敏','123456',21,'女','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小一','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小二','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小三','123456',21,'男','UI设计师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小四','123456',21,'男','UI设计师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小五','123456',21,'男','web工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小六','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小七','123456',21,'男','nodejs后台工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小八','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小九','123456',21,'男','nodejs后台工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'小十','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'金克斯','123456',21,'男','UI设计师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'贾克斯','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'李青','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'嘉文四世','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'拉克丝','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'卡莉斯塔','123456',21,'男','UI设计师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'崔丝塔娜','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'赵信','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'布兰德','123456',21,'男','web工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'凯特琳','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'伊泽瑞尔','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'布隆','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'索拉卡','123456',21,'男','UI设计师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'菲奥娜','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'莫甘娜','123456',21,'男','nodejs后台工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'娜美','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'孙悟空','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'阿狸','123456',21,'男','全栈工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'瑟庄妮','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'希维尔','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'娑娜','123456',21,'男','web工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'露露','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'安妮','123456',21,'男','UI设计师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'瑞兹','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'亚索','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'崔斯特','123456',21,'男','nodejs后台工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'卢锡安','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'兰博','123456',21,'男','UI设计师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'艾克','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'维克多','123456',21,'男','java工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+insert into users values (null,'盖伦','123456',21,'男','nodejs后台工程师','广州大学','广州市天河区大学城外环西路230号','13533578766',8000.00,null);
+
+创建公司表：
+company：
+create table companys (
+	c_id int (5) primary key auto_increment,
+	c_name varchar(30) not null,
+	c_address varchar(50) not null,
+	c_url varchar(30) not null,
+	c_phone varchar(20) not null,
+	c_type varchar(30) not null,
+	c_numbers int(8) ,
+	c_summary varchar(500) not null,
+	c_images varchar(50),
+	c_others varchar(500)
+);
+填充数据：
+insert into companys values (null,'京东商城','北京市朝阳区','http://www.jd.com','020-123456','民营企业',2000,'京东商城目前已经是中国最大的自营性电商企业，京东拥有中国最大的物流基础设配，通过完善布局，京东将成为全球唯一拥有中小件，大件灯物流设备的电商企业',null,null);
+insert into companys values (null,'杭州阿里巴巴控股有限公司','浙江省杭州市','http://www.taobao.com','020-123456','民营企业',1000,'阿里巴巴是中国目前最大的网上购物平台淘宝的母公司，旗下支付宝也是家喻户晓，全球五百强企业',null,null);
+insert into companys values (null,'久邦数码','广东省广州市','http://www.togogo.net','020-123456','民营企业',1000,'广州久邦数码是全球领先的移动互联网应用服务和广告平台，旗下业务包括面向全球用户的移动应用app，面向全国用户的旧版文学等。同时也是中国第一家在美国独立上市的移动互联网企业',null,null);
+insert into companys values (null,'网易','北京市西北旺','http://www.togogo.net','020-123456','民营企业',200,'中国领先的互联网技术公司，在开发互联网应用，服务和其他技术方面，网易始终保持国内业界的领先地位。网易对中国互联网发展具有强烈的使命感，利用最先进的技术实现网聚人的力量',null,null);
+insert into companys values (null,'当当网','北京左家庄','http://www.dangdang.com','020-123456','民营企业',200,'全球知名综合网上购物商城',null,null);
+insert into companys values (null,'腾讯','广东省广州市天河区乐天大厦','http://www.Tencent.com','020-123456','民营企业',200,'好公司',null,null);
+insert into companys values (null,'金山','广东省广州市天河区乐天大厦','http://www.togogo.net','020-123456','外资企业',200,'好公司',null,null);
+insert into companys values (null,'中国人寿','广东省广州市天河区乐天大厦','http://www.togogo.net','020-123456','国营企业',200,'好公司',null,null);
+insert into companys values (null,'中国石化','广东省广州市天河区乐天大厦','http://www.togogo.net','020-123456','国营企业',200,'好公司',null,null);
+insert into companys values (null,'中国移动','广东省广州市天河区乐天大厦','http://www.togogo.net','020-123456','国营企业',200,'好公司',null,null);
+
+创建工作表
+jobs:
+create table jobs (
+	j_id int (5) primary key auto_increment,
+	j_name varchar(30) not null,
+	c_id int(5) not null,
+	j_requires varchar(50) not null,
+	j_points varchar(50) not null,
+	j_type varchar(20),
+	j_money double(8,2),
+	j_other varchar(200)
+);
+填充数据：
+insert into jobs values(null,'web工程师',2,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'nodejs后台工程师',3,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'全栈工程师',4,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'java工程师',5,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'android工程师',6,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'UI设计工程师',7,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',8,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'web工程师',9,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',10,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'nodejs后台工程师',11,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',3,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'web工程师',2,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'java工程师',1,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',4,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'nodejs后台工程师',5,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',6,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'web工程师',7,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',8,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'nodejs后台工程师',9,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'java工程师',10,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'全栈工程师',11,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',2,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'web工程师',4,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',6,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'nodejs后台工程师',7,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',4,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'web工程师',9,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'全栈工程师',11,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',5,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',2,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'web工程师',3,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'UI设计工程师',6,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'全栈工程师',7,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',9,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'web工程师',10,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'UI设计工程师',1,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'全栈工程师',2,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+insert into jobs values(null,'前端工程师',4,'一年工作经验，数量使用前端技术(html,css,js)，熟练使用前端框架(angularjs,vuejs)，对待工作积极认真','公司待遇好，发展空间大','全职',10000,null);
+
